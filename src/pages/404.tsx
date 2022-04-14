@@ -1,5 +1,4 @@
 import { Link } from "gatsby";
-import React from "react";
 
 // styles
 const pageStyles = {

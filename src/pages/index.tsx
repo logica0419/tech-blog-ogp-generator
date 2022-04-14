@@ -1,5 +1,4 @@
 import { css } from "@emotion/react";
-import React from "react";
 
 const style = {
   app: css`
