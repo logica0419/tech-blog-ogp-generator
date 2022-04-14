@@ -1,4 +1,6 @@
 import { css } from "@emotion/react";
+import { Fragment } from "react";
+import Helmet from "react-helmet";
 
 const style = {
   app: css`
@@ -9,10 +11,20 @@ const style = {
 
 const IndexPage = () => {
   return (
-    <div css={style.app}>
-      <h1>Hello</h1>
-      <p>Welcome to your new Gatsby site.</p>
-    </div>
+    <Fragment>
+      <Helmet>
+        <html lang="ja" />
+        <title>Tech Blog OGP Generator</title>
+        <meta
+          name="description"
+          content="Zenn / Qiita OGP-like Image Generator"
+        />
+      </Helmet>
+      <div css={style.app}>
+        <h1>Hello</h1>
+        <p>Welcome to your new Gatsby site.</p>
+      </div>
+    </Fragment>
   );
 };
 

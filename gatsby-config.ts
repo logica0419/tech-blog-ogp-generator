@@ -1,10 +1,11 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
-  siteMetadata: {
-    title: "Tech Blog OGP Generator",
-  },
-  plugins: ["gatsby-plugin-emotion", "gatsby-plugin-eslint"],
+  plugins: [
+    "gatsby-plugin-emotion",
+    "gatsby-plugin-eslint",
+    "gatsby-plugin-react-helmet",
+  ],
 };
 
 export default config;
