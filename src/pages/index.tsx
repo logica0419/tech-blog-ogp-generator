@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { Fragment } from "react";
+import { FC, Fragment } from "react";
 import Helmet from "react-helmet";
 
 const style = {
@@ -9,7 +9,7 @@ const style = {
   `,
 };
 
-const IndexPage = () => {
+const IndexPage: FC = () => {
   return (
     <Fragment>
       <Helmet>
