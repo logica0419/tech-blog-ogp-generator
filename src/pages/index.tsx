@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { FC, Fragment } from "react";
+import React from "react";
 import Helmet from "react-helmet";
 
 const style = {
@@ -9,9 +9,9 @@ const style = {
   `,
 };
 
-const IndexPage: FC = () => {
+const IndexPage: React.FC = () => {
   return (
-    <Fragment>
+    <React.Fragment>
       <Helmet>
         <html lang="ja" />
         <title>Tech Blog OGP Generator</title>
@@ -24,7 +24,7 @@ const IndexPage: FC = () => {
         <h1>Hello</h1>
         <p>Welcome to your new Gatsby site.</p>
       </div>
-    </Fragment>
+    </React.Fragment>
   );
 };
 
