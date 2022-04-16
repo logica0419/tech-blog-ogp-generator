@@ -2,10 +2,13 @@ import { css } from "@emotion/react";
 import { FC, Fragment } from "react";
 import Helmet from "react-helmet";
 
+import Header from "../components/header";
+import "../styles/global.css";
+
 const style = {
   app: css`
+    margin: 100px;
     text-align: center;
-    min-height: 100vh;
   `,
 };
 
@@ -20,6 +23,7 @@ const IndexPage: FC = () => {
           content="Zenn / Qiita OGP-like Image Generator"
         />
       </Helmet>
+      <Header />
       <div css={style.app}>
         <h1>Hello</h1>
         <p>Welcome to your new Gatsby site.</p>
