@@ -22,7 +22,7 @@
     "gatsby": "^4.13.1",
     "gatsby-plugin-emotion": "^7.13.0",
     "gatsby-plugin-eslint": "^4.0.2",
-    "gatsby-plugin-react-helmet": "^5.13.0",
+    "gatsby-plugin-react-helmet": "^5.14.0",
     "prettier": "^2.6.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
