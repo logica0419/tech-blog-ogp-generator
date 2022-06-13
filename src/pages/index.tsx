@@ -1,6 +1,6 @@
 import { css } from "@emotion/react";
+import { Head } from "minista";
 import { FC, Fragment } from "react";
-import Helmet from "react-helmet";
 
 import "../assets/global.css";
 import Canvas from "../components/canvas";
@@ -16,14 +16,14 @@ const style = {
 const IndexPage: FC = () => {
   return (
     <Fragment>
-      <Helmet>
+      <Head>
         <html lang="ja" />
         <title>Tech Blog OGP Generator</title>
         <meta
           name="description"
           content="Zenn / Qiita OGP-like Image Generator"
         />
-      </Helmet>
+      </Head>
       <Header />
       <div css={style.app}>
         <h1>Hello</h1>
