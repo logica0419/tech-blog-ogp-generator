@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "minista",
-    "build": "minista build",
+    "build": "tsc --noEmit && minista build",
     "preview": "minista preview",
     "lint": "eslint ./src --ext .ts,.tsx",
     "format": "prettier --write ./src",

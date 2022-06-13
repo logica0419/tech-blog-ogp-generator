@@ -3,7 +3,8 @@ import { Head } from "minista";
 import { FC, Fragment } from "react";
 
 import "../assets/global.css";
-import Canvas from "../components/canvas";
+// @ts-ignore
+import Canvas from "../components/canvas?ph";
 import Header from "../components/header";
 
 const style = {
