@@ -1,18 +1,11 @@
-import { css } from "@emotion/react";
 import { Head } from "minista";
 import { FC, Fragment } from "react";
 
-import "../assets/global.css";
+import "../assets/global.scss";
+import "./index.scss";
 // @ts-ignore
 import Canvas from "../components/canvas?ph";
 import Header from "../components/header";
-
-const style = {
-  app: css`
-    margin: 100px;
-    text-align: center;
-  `,
-};
 
 const IndexPage: FC = () => {
   return (
@@ -26,7 +19,7 @@ const IndexPage: FC = () => {
         />
       </Head>
       <Header />
-      <div css={style.app}>
+      <div className="index-app">
         <h1>Hello</h1>
         <p>Welcome to your new Minista site.</p>
       </div>
