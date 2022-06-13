@@ -2,8 +2,9 @@ import { css } from "@emotion/react";
 import { FC, Fragment } from "react";
 import Helmet from "react-helmet";
 
+import "../assets/global.css";
+import Canvas from "../components/canvas";
 import Header from "../components/header";
-import "../styles/global.css";
 
 const style = {
   app: css`
@@ -26,8 +27,9 @@ const IndexPage: FC = () => {
       <Header />
       <div css={style.app}>
         <h1>Hello</h1>
-        <p>Welcome to your new Gatsby site.</p>
+        <p>Welcome to your new Minista site.</p>
       </div>
+      <Canvas />
     </Fragment>
   );
 };
